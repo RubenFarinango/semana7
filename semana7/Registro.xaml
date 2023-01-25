@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="semana7.Registro" NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Venta de Registro" FontSize="24" />
+            <Entry x:Name="txtnombre" Placeholder="Nombre"/>
+            <Entry x:Name="txtusuario" Placeholder="Usuario"/>
+            <Entry x:Name="txtcontrasena" Placeholder="Contraseña"/>
+            
+            <Button x:Name="btnregistro" Text="REGISTRO" Clicked="btnregistro_Clicked"/>
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
