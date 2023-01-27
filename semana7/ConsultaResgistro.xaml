@@ -1,12 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="semana7.ConsultaResgistro">
+             x:Class="semana7.ConsultaResgistro" NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Lista de Usuario" FontSize="24" HorizontalTextAlignment="Center"/>
+            
+            <ListView x:Name="ListaEstudiantes" ItemSelected="OnSelection">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                        <TextCell Text="{Binding Nombre}" Detail="{Binding Usuario}"></TextCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+                
+            </ListView>
+
+            <Button x:Name="btnregresar" Text="Regresar" Clicked="btnregresar_Clicked"/>
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

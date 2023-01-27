@@ -4,9 +4,15 @@
              x:Class="semana7.Elemento">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Actualizar - Eliminar" FontSize="24" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtnombre" Placeholder="Nombre" />
+            <Entry x:Name="txtusuario" Placeholder="usuario"/>
+            <Entry x:Name="txtcontrasena" Placeholder="Contrasena"/>
+
+
+            <Button x:Name="btnactualizar" Text="Actualizar" Clicked="btnactualizar_Clicked" />
+            <Button x:Name="btneliminar" Text="Eliminar" Clicked="btneliminar_Clicked"/>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
